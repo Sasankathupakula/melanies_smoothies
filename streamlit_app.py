@@ -4,10 +4,11 @@ from snowflake.snowpark.functions import col
 
 
 # Write directly to the app
-st.title(":balloon: Customize your Smoothie :balloon:")
+st.title("My parents new Healthy Dinner")
 st.write(
-    """Choose the fruits you want in your Custom Smoothie 
-    """
+    Omega 3 & Blueberry Oatmeal
+    Kale, Spinach & Rocket Smoothie
+    Hard-Boiled Free-Range Egg
 )
 
 
