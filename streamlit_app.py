@@ -4,12 +4,12 @@ from snowflake.snowpark.functions import col
 
 
 # Write directly to the app
-st.title("My parents new Healthy Dinner")
+st.title(":balloon: Customize your Smoothie :balloon:")
 st.write(
-    Omega 3 & Blueberry Oatmeal
-    Kale, Spinach & Rocket Smoothie
-    Hard-Boiled Free-Range Egg
+    """Choose the fruits you want in your Custom Smoothie 
+    """
 )
+
 
 
 name_on_order = st.text_input('Name on smoothie:')
