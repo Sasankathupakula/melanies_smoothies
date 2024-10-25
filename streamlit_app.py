@@ -53,7 +53,12 @@ if ingredients_list:
        
          st.success('Your Smoothie is ordered!', icon="✅")
         
-
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+if fruityvice_response.content:
+    fruityvice_data = fruityvice_response.json()
+    st.text(fruityvice_data)
+else:
+    st.text("Error: Received empty response from the API")
 
 
 
