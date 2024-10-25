@@ -50,18 +50,8 @@ if ingredients_list:
          st.success('Your Smoothie is ordered!', icon="✅")
         
 import requests
-import streamlit as st
-
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-
-# Check if the response is successful
-if fruityvice_response.status_code == 200:
-    # Convert the response to JSON
-    fruityvice_data = fruityvice_response.json()
-    # Display the JSON data as text
-    st.text(fruityvice_data)
-else:
-    st.text(f"Error: {fruityvice_response.status_code}")
+st.text(fruityvice_response)
 
 
 
