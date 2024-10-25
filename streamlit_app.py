@@ -49,7 +49,6 @@ if ingredients_list:
        
          st.success('Your Smoothie is ordered!', icon="✅")
         
-#new section to display fruitvice nutrition information
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 st.text(fruityvice_response.json())
